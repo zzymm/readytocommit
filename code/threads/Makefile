@@ -13,8 +13,8 @@ HFILES = $(THREAD_H)
 CFILES = $(THREAD_C)
 C_OFILES = $(THREAD_O)
 
-include ../Makefile.common
-include ../Makefile.dep
+include ../build.linux/Makefile.common
+include ../build.linux/Makefile.dep
 #-----------------------------------------------------------------
 # DO NOT DELETE THIS LINE -- make depend uses it
 # DEPENDENCIES MUST END AT END OF FILE
