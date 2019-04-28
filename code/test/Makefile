@@ -12,7 +12,7 @@
 
 # if you are cross-compiling, you need to point to the right executables
 # and change the flags to ld and the build procedure for as
-GCCDIR = ./mips-xgcc/
+GCCDIR = /home/zzymm/CS420-FileSystems/test/mips-xgcc/
 #LDFLAGS = -T script -n -nostartfiles
 LDFLAGS = -T nachos.ld -n -nostartfiles
 ASFLAGS =
