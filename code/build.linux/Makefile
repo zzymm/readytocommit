@@ -123,10 +123,16 @@ depend:
 	@echo '/^# DO NOT DELETE THIS LINE/+2,$$d'
 	@echo '$$r makedep'
 	@echo 'w' 
-	
-	@echo '# DEPENDENCIES MUST END AT END OF FILE' >> Makefile
-	@echo '# IF YOU PUT STUFF HERE IT WILL GO AWAY' >> Makefile
-	@echo '# see make depend above' >> Makefile
+	@echo $(THREAD_H)
+	@echo $(THREAD_C)
+	@echo $(THREAD_O)
+	@echo $(THREAD_S)
+	@echo $(USERPROG_H)
+	@echo $(USERPROG_C)
+	@echo $(USERPROG_O)
+	@echo '# DEPENDENCIES MUST END AT END OF FILE' 
+	@echo '# IF YOU PUT STUFF HERE IT WILL GO AWAY' 
+	@echo '# see make depend above' 
 
 all: 
 #	cd threads; $(MAKE) depend
