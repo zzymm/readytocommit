@@ -107,17 +107,6 @@ NETWORK_O = nettest.o post.o network.o
 
 S_OFILES = switch.o
 
-OFILES = $(C_OFILES) $(S_OFILES)
-
-$(PROGRAM): $(OFILES)
-	$(LD) $(OFILES) $(LDFLAGS) -o $(PROGRAM)
-
-$(C_OFILES): %.o:
-	$(CC) $(CFLAGS) -c $<
-
-switch.o: ../threads/switch.s
-	$(CPP) -P $(INCPATH) $(HOST) ../threads/switch.s > swtch.s
-	$(AS) --32 -o switch.o swtch.s
 
 depend: 
 	@echo '/^# DO NOT DELETE THIS LINE/+2,$$d'
@@ -143,6 +132,7 @@ all:
 #	cd vm; $(MAKE) nachos 
 #	cd ../filesys; $(MAKE) depend
 	cd ../filesys; $(MAKE) nachos 
+	cp ../filesys/nachos ./
 #	cd network; $(MAKE) depend
 #	cd network; $(MAKE) nachos 
 	cd ../bin; make all
