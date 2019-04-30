@@ -4,6 +4,7 @@ MAKE = make
 CFLAGS = -g -Wall -m32 -Wshadow $(INCPATH) $(DEFINES) $(HOST) -DCHANGED
 LDFLAGS =  -m32
 
+
 # These definitions may change as the software is updated.
 # Some of them are also system dependent
 CPP=/lib/cpp

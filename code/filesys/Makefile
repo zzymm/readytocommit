@@ -22,7 +22,7 @@ C_OFILES = $(THREAD_O) $(USERPROG_O) $(FILESYS_O)
 # C_OFILES = $(THREAD_O) $(FILESYS_O)
 
 include ../build.linux/Makefile.common
-#include ../build.linux/Makefile.dep
+# include ../build.linux/Makefile.dep
 #-----------------------------------------------------------------
 # DO NOT DELETE THIS LINE -- make depend uses it
 # DEPENDENCIES MUST END AT END OF FILE
