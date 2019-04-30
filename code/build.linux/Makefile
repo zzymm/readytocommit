@@ -123,6 +123,7 @@ depend:
 	@echo '/^# DO NOT DELETE THIS LINE/+2,$$d'
 	@echo '$$r makedep'
 	@echo 'w' 
+	
 	@echo '# DEPENDENCIES MUST END AT END OF FILE' >> Makefile
 	@echo '# IF YOU PUT STUFF HERE IT WILL GO AWAY' >> Makefile
 	@echo '# see make depend above' >> Makefile
